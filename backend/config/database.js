@@ -4,9 +4,7 @@ const connectDatabse = ( )=>{
     mongoose.connect(process.env.DB_URI,{useUnifiedTopology:true,
         }).then((data)=>{
             console.log(`db is connected`);
-        }).catch((err)=>{
-            console.log(err);
-        })
+        });
 }
 
 
